@@ -1,0 +1,241 @@
+body{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.header{
+    background-color: hsl(0, 0%, 100%);
+    height: 80px;
+    border-bottom: 2px solid black;
+    
+}
+.header .logo {
+  background-image: url(images/Final\ Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -105px;
+}
+.header .icon{
+   float: right;
+}
+.header .icon i{
+    font-size: 35px;
+    padding-top: 25px;
+    padding-right: 15px;
+    position: relative;
+  
+}
+.header .icon i:hover{
+    color: hsl(0, 0%, 34%);
+    cursor: pointer;
+}
+
+.navbar{
+    margin: auto;
+    width: 550px;
+    padding: auto; 
+    
+}
+
+.navbar ul{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.navbar a:hover{
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    transition: ease 0.2s;
+}
+.navbar li{
+   list-style-type: none;
+    padding-left: 0;
+    margin-right: 20px;
+}
+.menu-wrap{
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    width: 150px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.menu-wrap.open-menu{
+    max-height: 200px;
+}
+.menu{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+.content{
+    display: flex;
+    align-items: left;
+    flex-direction:column;
+}
+.content a{
+    text-decoration: none;
+    margin: 6px 0;
+}
+.imgnav{
+    display: flex;
+    width: 100%;
+    margin-top: 2,5%;
+    flex-direction: row;
+  
+}
+
+.imgnav div{
+    width: 50%;
+    height: 375px;
+    margin: 5px;
+     box-shadow: 20px 20px 30px rgba(116, 116, 116, 0.2);
+}
+.imgnav div:hover{
+    box-shadow: 20px 20px 30px rgba(96, 96, 96, 0.6);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.imgnav img{
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 6/3;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    
+}
+
+.products{
+    text-align: center;
+
+}
+.products .product-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.products .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(116, 116, 116, 0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+.products .pro:hover{
+     box-shadow: 20px 20px 30px rgba(96, 96, 96, 0.6);
+}
+.products .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+.products .pro .description{
+    text-align: start;
+    padding: 10px 0;
+}
+.products .pro .description span{
+    color: grey;
+    font-size: 12px;
+}
+.products .pro .description h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+.products .pro .description h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.products .pro .fa-solid.fa-cart-shopping{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color:rgb(255, 255, 255);
+    font-weight: 500;
+    color: violet;
+    border: 1px solid lightpink;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+/*Single Product Webpage*/
+.prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+.prodetails .single-pro-image{
+    width: 30%;
+    margin-right: 50px;
+}
+.single-pro-image img{
+    width: 100%;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 33%;
+    cursor: pointer;
+}
+.prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+.prodetails .single-pro-details h4{
+    padding: 10px 0 5px 0;
+}    
+.prodetails .single-pro-details h2{
+    font-size: 26px;   
+}
+.prodetails .single-pro-details button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 35%;
+}
+.prodetails .single-pro-details span{
+    line-height: 25px;
+    
+}
+.footer{
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    border-top: 3px solid black;
+}
+.footer .follow{
+    width: 50%;
+}
+.footer .form{
+    width:50%;
+}
+/*Responsiveness*/
+@media all and (max-width: 1024px){
+
+}
